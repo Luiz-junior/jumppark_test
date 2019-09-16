@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFAF7;
+    height: 200px;
+    width: 100%;
+    flex: 1;
+}
+
+.card {
+    background: #fff;
+}
