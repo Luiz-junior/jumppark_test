@@ -1,0 +1,12 @@
+.list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 900px;
+    background: #FFF;
+}
+
+.list-container ul {
+    list-style: none;
+}

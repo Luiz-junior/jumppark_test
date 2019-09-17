@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #DDF1F8;    
+}
+
+.card {
+    background: #fff;
+}
+
+.footer {
+    padding-top: 2%;
+    margin-bottom: -5%;
+}
+
+.footer h3 {
+    color: #999
+}
