@@ -50,6 +50,7 @@ table {
 .content-table td {
     text-align: center;
     height: 50px;
+    color: #1E5168;
 }
 
 .content-table td:last-child {

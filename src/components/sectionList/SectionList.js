@@ -1,20 +1,27 @@
 import React from 'react';
 
 import './styles.css';
+import { convertDate } from '../../utils/commons';
 
 const SectionList = props => {
-    const { content } = props.list;
+    const { content } = props.sections;
     
     return (
         <div className="main-container">
 
           <div className="top-container">
-            <select name="select" className="select-export">
-              <option value="valor1">Exportar</option> 
+            <select className="select-export" onChange={e => { console.log('selecionado: ', e.target.value) }} >
+              <option value="exportar">Exportar</option> 
+              <option value="CSV">CSV</option> 
+              <option value="PDF">PDF</option> 
             </select>
 
-            <input type="text" className="input-search" placeholder="Pesquisar" />
-
+            <input 
+              type="text" 
+              className="input-search" 
+              placeholder="Pesquisar" 
+              onKeyUp={props.onEnter}
+            />
           </div>
 
           <div className="list-container">
@@ -24,7 +31,7 @@ const SectionList = props => {
               <tr className="header-table">
                 <th>Operador</th>
                 <th>Abertura de sessão</th>
-                <th className="last-th">Fechamento de sessão</th>
+                <th>Fechamento de sessão</th>
               </tr>
             </thead>
             { 
@@ -41,9 +48,7 @@ const SectionList = props => {
               })
             }
           </table> 
-         
         </div>
-
         </div>
     )
 }
