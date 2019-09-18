@@ -28,9 +28,7 @@ class List extends Component {
             return <h1>Carregando...</h1> 
         else {
             return <SectionList list={list} />
-        }
-            
-            
+        }       
     }
 }
 

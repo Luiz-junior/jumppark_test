@@ -7,6 +7,52 @@
     background: #FFF;
 }
 
-.list-container ul {
-    list-style: none;
+.top-container {
+  display: flex;
+  justify-content: space-between;
 }
+
+.select-export {
+  margin: 15px 0 5px 15px;
+  background: #52BC76;
+  color: #FFF;
+  height: 30px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 16px;
+}
+
+.input-search{
+  margin: 15px 15px 5px 0;
+  height: 25px;
+  width: 200px;
+  border: 2px solid #1E5168;
+  border-radius: 5px;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.header-table {
+    background: #1e5168;
+    color: #FFF;
+    height: 50px;
+    text-align: center;
+}
+
+.header-table th:last-child {
+  text-align: left;
+}
+
+.content-table td {
+    text-align: center;
+    height: 50px;
+}
+
+.content-table td:last-child {
+  text-align: left;
+}
+
