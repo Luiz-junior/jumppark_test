@@ -43,7 +43,7 @@ const SectionList = props => {
               content.map(c => {
               return (
                 <tbody key={c.sessionId}>
-                  <tr className="content-table" >
+                  <tr className="content-table" onClick={() => props.selectOperator(c.userName)}>
                     <td> { c.userName } </td>
                     <td> { c.startDateTime } </td>
                     <td> { c.endDateTime } </td>

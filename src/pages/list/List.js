@@ -17,13 +17,21 @@ class List extends Component {
             console.log(e.target.value);
     };
 
+    selectOperator = operator => {
+        console.log('Operador Selecionado: ', operator);
+    }
+
     render() {
         const { sections, loading } = this.props.fetchSections;
 
         if(loading) 
             return <h3>Carregando...</h3> 
         else {
-            return <SectionList sections={sections} onEnter={this.onEnterSearch} />
+            return <SectionList 
+                        sections={sections} 
+                        onEnter={this.onEnterSearch} 
+                        selectOperator={this.selectOperator}
+                    />
         }       
     }
 }
