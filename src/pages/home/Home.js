@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import './styles.css';
 import List from '../list/List';
+import Footer from '../../components/footer/Footer';
 
 class Home extends Component {
   render() {
@@ -11,9 +12,7 @@ class Home extends Component {
                 <List />
             </div>
 
-            <div className="footer">
-              <h3>Todos os direitos reservados a Jump Tecnologia | 2019 &copy;</h3>
-            </div>
+            <Footer />
         </div>
     );
   }

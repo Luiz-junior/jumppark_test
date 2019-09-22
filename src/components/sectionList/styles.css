@@ -23,6 +23,30 @@
   padding-left: 16px;
 }
 
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-icon {
+  margin-left: -80px;
+  color: #999;
+  margin-top: 10px;
+}
+
+.button-search {
+  background: #1E5168;
+  border: none;
+  border-radius: 5px 5px 5px 0;
+  color: #FFF;
+  height: 31px;
+  width: 40px;
+  margin-top: 10px;
+  margin-left: 45px;
+  margin-right: 15px;
+}
+
 .input-search{
   margin: 15px 15px 5px 0;
   height: 25px;

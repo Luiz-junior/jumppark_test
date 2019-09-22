@@ -3,18 +3,11 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import SectionList from '../../components/sectionList/SectionList';
-import api from '../../services/api';
 import { requestSections, error } from '../../store/actions/sectionsAction';
 
 class List extends Component {
 
-    state = {
-        list: [],
-        loading: true,
-        error: '',
-    };
-
-    async componentDidMount() {
+    componentDidMount() {
         this.props.requestSections();
     }
 
@@ -25,9 +18,7 @@ class List extends Component {
     };
 
     render() {
-        
         const { sections, loading } = this.props.fetchSections;
-        //console.log(this.props.fetchSections)
 
         if(loading) 
             return <h3>Carregando...</h3> 

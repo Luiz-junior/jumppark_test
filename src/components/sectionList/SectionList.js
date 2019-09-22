@@ -1,7 +1,8 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSortDown, faSearch } from '@fortawesome/free-solid-svg-icons'
 
 import './styles.css';
-import { convertDate } from '../../utils/commons';
 
 const SectionList = props => {
     const { content } = props.sections;
@@ -16,12 +17,16 @@ const SectionList = props => {
               <option value="PDF">PDF</option> 
             </select>
 
-            <input 
-              type="text" 
-              className="input-search" 
-              placeholder="Pesquisar" 
-              onKeyUp={props.onEnter}
-            />
+            <div className="search">
+              <input 
+                type="text" 
+                className="input-search" 
+                placeholder="Pesquisar" 
+                onKeyUp={props.onEnter}
+              />
+              <FontAwesomeIcon icon={faSearch} className="search-icon" />
+              <button className="button-search"><FontAwesomeIcon icon={faSortDown} /></button>
+            </div>
           </div>
 
           <div className="list-container">
@@ -49,7 +54,7 @@ const SectionList = props => {
             }
           </table> 
         </div>
-        </div>
+      </div>
     )
 }
 

@@ -1,6 +1,5 @@
 import {
     REQUEST_SECTIONS,
-    SUCCESS_SECTIONS,
     ERROR
 } from '../actions/types';
 
